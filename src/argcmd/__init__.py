@@ -99,7 +99,11 @@ class CommandRegistry:
         parser = argparse.ArgumentParser()
         parser.set_defaults(func=None, argv0=argv0)
 
-        subparsers = parser.add_subparsers(metavar='command', help=_('Choose one of the following:'))
+        subparsers = parser.add_subparsers(
+            metavar='command',
+            required=True,
+            help=_('Choose one of the following commands:'),
+        )
         for cmd_name, cmd in self.commands.items():
             cmd.augment_subparsers(subparsers)
 

@@ -13,8 +13,7 @@ packages = [
 argcmd-test = "argcmd.__main__:main"
 
 [tool.poetry.dependencies]
-python = "^3.10"
-
+python = "^3.7"
 
 [build-system]
 requires = ["poetry-core"]

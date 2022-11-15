@@ -4,6 +4,10 @@
 
 I got sick of implementing this multiple times, and other people asked me how to do it too.
 
+## Requirements
+
+Python 3.7 or later.
+
 ## Installation
 
 Download the `*.whl` file from under `https://github.com/lee-b/argcmd/Releases`, and install
@@ -12,7 +16,7 @@ it with `pip install`. `pip` remote install, and `poetry` instructions to follow
 ## Usage
 
 See `src/argcmd/__main__.py` for an example.  You can run this example as `argcmd-test` after
-installation.
+installation (`argcmd-test` will go away when proper unit tests are added instead).
 
 ## License
 
